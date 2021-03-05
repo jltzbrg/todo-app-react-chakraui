@@ -6,10 +6,19 @@ import {
   IconButton,
   StackDivider,
   Spacer,
+  Badge,
 } from '@chakra-ui/react';
 import { FaTrash } from 'react-icons/fa';
 
 function TodoList({ todos, deleteTodo }) {
+  if (!todos.length) {
+    return (
+      <Badge colorScheme='green' p='4' m='4' borderRadius='lg'>
+        No Todos, yayyy!
+      </Badge>
+    );
+  }
+
   return (
     <VStack
       divider={<StackDivider />}
