@@ -9,17 +9,7 @@ import {
 } from '@chakra-ui/react';
 import { FaTrash } from 'react-icons/fa';
 
-function TodoList() {
-  const todos = [
-    {
-      id: '1',
-      body: 'get bread',
-    },
-    {
-      id: '2',
-      body: 'cleaning the house',
-    },
-  ];
+function TodoList({ todos, deleteTodo }) {
   return (
     <VStack
       divider={<StackDivider />}
@@ -34,7 +24,11 @@ function TodoList() {
         <HStack id={todo.id}>
           <Text>{todo.body}</Text>
           <Spacer />
-          <IconButton icon={<FaTrash />} isRound='true' />
+          <IconButton
+            icon={<FaTrash />}
+            isRound='true'
+            onClick={() => deleteTodo(todo.id)}
+          />
         </HStack>
       ))}
     </VStack>
