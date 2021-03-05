@@ -20,6 +20,7 @@ function App() {
         bgClip='text'>
         Todo Application
       </Heading>
+      <TodoList />
     </VStack>
   );
 }
