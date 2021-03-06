@@ -21,9 +21,9 @@ Before you begin, ensure you have met the following requirements:
 - Nodejs with NPM or Yarn
 - A hot coffee
 
-## Using <project_name>
+## Using Todo Application
 
-To use <project_name>, follow these steps:
+To use Todo Application, follow these steps:
 
 ```
 $ https://github.com/jltzbrg/todo-app-react-chakraui.git
