@@ -3,9 +3,9 @@
 This is a simple Reactjs project created to understand and use the UI Framework Chakra-UI.
 
 <!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
-
+<!--
 ![Twitter Follow](https://img.shields.io/twitter/follow/jltzbrg?style=social)
-
+-->
 ## Tools use for the project:
 
 - React (via Create-React-App)
